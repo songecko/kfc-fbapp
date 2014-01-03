@@ -36,6 +36,7 @@ if (!$mobileDetect->isMobile() && $signedRequest == null)
     <body>
     	<div class="newFlag"><img src="images/new-flag.png" class="img-responsive"></div>
     	<div class="title"><img src="images/title.png" class="img-responsive"></div>
+    	<div class="text"><img src="images/text_01.png" class="img-responsive"></div>
     	
     	<div class="canastaFresa"><img src="images/canasta-fresa.png" class="img-responsive"></div>
     	<div class="canastaMango"><img src="images/canasta-mango.png" class="img-responsive"></div>

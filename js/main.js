@@ -16,13 +16,18 @@ function init()
 				  right: '0%',
 				  duration: 1000,
 				  complete: function(){
+					  $('.text').transition({
+						  opacity: 1,
+						  duration: 1200
+					  });
 					  $('.title').transition({
 						  opacity: 1,
+						  delay: 1000,
 						  duration: 1200
 					  });
 					  $('.newFlag').transition({
 						  opacity: 1,
-						  delay: 500,
+						  delay: 1800,
 						  duration: 1200
 					  });
 				  }

@@ -26,7 +26,7 @@ body {
 .title {
 	width: 100%;
 	position: absolute;
-	top: 8%;
+	top: 4%;
   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   	filter: alpha(opacity=0);
   	-moz-opacity: 0;
@@ -35,6 +35,22 @@ body {
 }
 
 .title img {
+	margin: 0 auto;
+	max-width: 70%;
+}
+
+.text {
+	width: 100%;
+	position: absolute;
+	top: 17%;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  	filter: alpha(opacity=0);
+  	-moz-opacity: 0;
+  	-khtml-opacity: 0;
+  	opacity: 0;
+}
+
+.text img {
 	margin: 0 auto;
 	max-width: 70%;
 }
