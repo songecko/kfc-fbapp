@@ -4,8 +4,8 @@ require_once 'vendor/autoload.php';
 
 $mobileDetect = new Mobile_Detect();
 $facebook = new Facebook(array(
-		'appId'  => '184632401732542', 
-		'secret' => '4686563548e330d16f55f8f70eccb898', 
+		'appId'  => '194961134035231', 
+		'secret' => '4a587a72f85c19de5afbfb8de055c05e', 
 		'allowSignedRequest' => true, // optional, but should be set to false for non-canvas apps
 ));
 
@@ -13,7 +13,7 @@ $signedRequest = $facebook->getSignedRequest();
 
 if (!$mobileDetect->isMobile() && $signedRequest == null) 
 {
-	header('Location: https://www.facebook.com/KFCPuertoRico/app_184632401732542');
+	header('Location: https://www.facebook.com/KFCPuertoRico/app_194961134035231');
 }
 
 ?>
