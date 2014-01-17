@@ -13,7 +13,7 @@ $signedRequest = $facebook->getSignedRequest();
 
 if (!$mobileDetect->isMobile() && $signedRequest == null) 
 {
-	header('Location: https://www.facebook.com/KFCPuertoRico/app_184632401732542');
+	//header('Location: https://www.facebook.com/KFCPuertoRico/app_184632401732542');
 }
 
 ?>
