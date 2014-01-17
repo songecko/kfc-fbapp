@@ -4,8 +4,8 @@ require_once 'vendor/autoload.php';
 
 $mobileDetect = new Mobile_Detect();
 $facebook = new Facebook(array(
-		'appId'  => '184632401732542', 
-		'secret' => '4686563548e330d16f55f8f70eccb898', 
+		'appId'  => '194961134035231', 
+		'secret' => '4a587a72f85c19de5afbfb8de055c05e', 
 		'allowSignedRequest' => true, // optional, but should be set to false for non-canvas apps
 ));
 
@@ -13,7 +13,7 @@ $signedRequest = $facebook->getSignedRequest();
 
 if (!$mobileDetect->isMobile() && $signedRequest == null) 
 {
-	//header('Location: https://www.facebook.com/KFCPuertoRico/app_184632401732542');
+	header('Location: https://www.facebook.com/KFCPuertoRico/app_194961134035231');
 }
 
 ?>
@@ -45,6 +45,16 @@ if (!$mobileDetect->isMobile() && $signedRequest == null)
     	<div class="vasoMango"><img src="images/vaso-mango.png" class="img-responsive"></div>
     	
     	<div class="kfcLogo"><img src="images/kfc-logo.png" class="img-responsive"></div>
+    	
+    	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-42626593-2', 'facebook.com');
+		  ga('send', 'pageview');
+		</script>
     	
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
